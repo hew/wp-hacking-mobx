@@ -4,19 +4,30 @@ import DevTools from 'mobx-react-devtools';
 
 @observer
 class App extends Component {
+
   render() {
+    const { posts } = this.props.appState
     return (
       <div>
-        <button onClick={this.onReset}>
+        <button onClick={this.onFetch}>
           FETCH!!
         </button>
+        <button onClick={this.onBeep}>
+          BEEP!!
+        </button>
+        { posts.map(post => <span key={post.id}>{post.title.rendered}</span>)}
+        { this.props.appState.totalPages }
         <DevTools />
       </div>
     );
   }
 
-  onReset = () => {
+  onFetch = () => {
     this.props.appState.fetchPosts();
+  };
+
+  onBeep = () => {
+    this.props.appState.changeBeep();
   };
 }
 
