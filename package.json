@@ -1,28 +1,28 @@
 {
-  "name": "mobx-react-boilerplate",
+  "name": "wp-hacking-mobx",
   "version": "1.0.0",
-  "description": "Boilerplate for MobX + React project with JSX, ES6 compilation and hot code reloading",
+  "description": "An experimental Wordpress theme.",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-boilerplate.git"
+    "url": "https://github.com/hew/wp-hacking-mobx.git"
   },
   "keywords": [
     "react",
     "reactjs",
     "boilerplate",
     "mobx",
-    "starter-kit"
+    "wordpress",
+    "wp"
   ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
+  "author": "Matthew Jones <matt@hew.tools> (http://github.com/hew)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
+    "url": "https://github.com/hew/wp-hacking-mobx.git"
   },
-  "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.1.0",
