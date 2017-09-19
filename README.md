@@ -1,11 +1,9 @@
 Hacking WP Mobx
-=====================
+===============
 
-This is a WIP/Proof of Concept Wordpress theme that uses the Wordpress REST API.
+WIP/Proof of Concept Wordpress theme that uses the Wordpress REST API.
 
-At the time of writing, I cannot get it to run - some issue with Babel and JSX. 
-
-In theory, it works, though.
+Doesn't even need a wordpress instance, because you can just hit up http://demo.wp-api.org/wp-json/wp/v2/.
 
 ```
 npm install
