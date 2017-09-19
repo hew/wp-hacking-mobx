@@ -1,23 +1,17 @@
 <?php
-/*
-*   Theme Name: Klue
-*   Description: Klue Marketing Website
-*   Author: Test
-*   Version: 1.0
-*   */
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-get_header(); ?>
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-<html>
-  <head>
-    <title>Todo App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="/static/bundle.js"></script>
-  </body>
-</html>
-
-
-<?php
-get_footer();
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
